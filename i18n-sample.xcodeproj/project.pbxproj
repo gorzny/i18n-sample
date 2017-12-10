@@ -14,6 +14,7 @@
 		B20D9F7F1FDCABF4003B1ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20D9F7D1FDCABF4003B1ECA /* LaunchScreen.storyboard */; };
 		B20D9F8A1FDCABF4003B1ECA /* i18n_sampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20D9F891FDCABF4003B1ECA /* i18n_sampleTests.swift */; };
 		B20D9F951FDCABF5003B1ECA /* i18n_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20D9F941FDCABF5003B1ECA /* i18n_sampleUITests.swift */; };
+		B20D9FA61FDCB397003B1ECA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B20D9FA81FDCB397003B1ECA /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,10 @@
 		B20D9F901FDCABF4003B1ECA /* i18n-sampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "i18n-sampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20D9F941FDCABF5003B1ECA /* i18n_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = i18n_sampleUITests.swift; sourceTree = "<group>"; };
 		B20D9F961FDCABF5003B1ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20D9FA21FDCB08B003B1ECA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		B20D9FA31FDCB08B003B1ECA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		B20D9FA71FDCB397003B1ECA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B20D9FA91FDCB39D003B1ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +108,7 @@
 				B20D9F7B1FDCABF4003B1ECA /* Assets.xcassets */,
 				B20D9F7D1FDCABF4003B1ECA /* LaunchScreen.storyboard */,
 				B20D9F801FDCABF4003B1ECA /* Info.plist */,
+				B20D9FA81FDCB397003B1ECA /* Localizable.strings */,
 			);
 			path = "i18n-sample";
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20D9F7F1FDCABF4003B1ECA /* LaunchScreen.storyboard in Resources */,
+				B20D9FA61FDCB397003B1ECA /* Localizable.strings in Resources */,
 				B20D9F7C1FDCABF4003B1ECA /* Assets.xcassets in Resources */,
 				B20D9F7A1FDCABF4003B1ECA /* Main.storyboard in Resources */,
 			);
@@ -300,6 +307,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B20D9F791FDCABF4003B1ECA /* Base */,
+				B20D9FA21FDCB08B003B1ECA /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,8 +316,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				B20D9F7E1FDCABF4003B1ECA /* Base */,
+				B20D9FA31FDCB08B003B1ECA /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B20D9FA81FDCB397003B1ECA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20D9FA71FDCB397003B1ECA /* pt-BR */,
+				B20D9FA91FDCB39D003B1ECA /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -319,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -376,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -427,12 +447,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ39MR7KZS;
 				INFOPLIST_FILE = "i18n-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewgorzny.i18n-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,12 +462,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ39MR7KZS;
 				INFOPLIST_FILE = "i18n-sample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewgorzny.i18n-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

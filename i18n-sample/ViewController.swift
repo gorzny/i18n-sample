@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var simpleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setUpLabel()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // MARK: Custom funcs
+    
+    func setUpLabel() {
+        simpleLabel.text = NSLocalizedString("Hello", comment: "Welcome message")
+    }
 
 }
 
